@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "redfin" do |head_node|
 
     # Use CentOS 7 box
-    head_node.vm.box = "centos/7"
+    head_node.vm.box = "bento/centos-7.7"
 
     # Use the public (bridged) network
     #head_node.vm.network "public_network"  # This will prompt for bridge interface
@@ -56,7 +56,7 @@ Vagrant.configure("2") do |config|
     config.vm.define name do |compute_node|
 
       # Use centos 7 box
-      compute_node.vm.box = "centos/7"
+      compute_node.vm.box = "bento/centos-7.7"
 
       # Use the public (bridged) network
       # compute_node.vm.network "public_network"  # This will prompt for bridge interface
